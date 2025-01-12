@@ -3,8 +3,12 @@
   justify-content: space-between;
   max-width: 1280px;
   height: 99px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  position: sticky;
+  top: 10px;
+  margin-bottom: 99px;
 }
 
 .header-site {
@@ -61,6 +65,7 @@
   align-items: center;
   flex-direction: row;
   gap: 10px;
+  text-decoration: none;
 }
 
 .link-nav-item {
@@ -71,9 +76,6 @@
 .link-nav-item:visited {
   color: white;
 }
-.container-nav-menu {
-  position: sticky;
-}
 
 .title-main-text {
   font-weight: 900;
@@ -82,9 +84,9 @@
   text-align: center;
   color: #fff;
   font-family: "Effra-Heavy";
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
 }
-.wrapper {
+.wrapper-main {
   max-width: 700px;
   margin: 0 auto 95px auto;
 }
@@ -119,17 +121,17 @@
   display: flex;
   gap: 18px;
   justify-content: center;
+  align-items: center;
 }
 
 .horizontal-card {
   max-width: 341px;
   height: 82px;
-  display: flex;
   background: #181818;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   position: relative;
+  display: flex;
 }
 
 .logo-card-image {
@@ -173,15 +175,17 @@
 .container-card {
   display: flex;
   gap: 13px;
+  align-items: center;
+  max-width: 100%;
 }
 
 .wrapper-cards {
   max-width: 1076px;
   display: grid;
   grid-template-columns: auto auto;
-  margin: 0 auto 98px auto;
   position: relative;
   height: 187px;
+  margin: 0 auto 91px auto;
 }
 
 .twitter-card {
@@ -210,7 +214,7 @@
   z-index: 2;
 }
 
-.ball-card {
+.png-card {
   position: relative;
   transform: rotate(4deg);
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.8);
@@ -220,11 +224,12 @@
 
 .section-new-tabs {
   background-color: #a8ff35;
+  display: flex;
 }
 
 .wrapper-tabs {
   max-width: 854px;
-  margin: 0 auto;
+  margin: 140px auto 140px auto;
 }
 
 .title-tabs {
@@ -233,7 +238,7 @@
   text-align: center;
   color: #000;
   font-family: "Effra";
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .center-cell {
@@ -241,6 +246,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  gap: 24px;
 }
 
 .size-box-border-centr {
@@ -286,29 +292,36 @@
   color: #000;
   font-family: "Effra";
   max-width: 666px;
-  margin: 0 auto 140px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-finded-platforms {
+  margin: 140px auto;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: column;
 }
 
 .re-set-color-text {
   color: rgba(170, 170, 170, 1);
 }
-
+.only-text {
+  display: flex;
+  flex-direction: column;
+}
 .header-only-text {
   font-weight: 700;
   font-size: 64px;
   color: #000;
   font-family: "Effra";
+  margin: 0;
 }
 
 .wrapper-only-text {
   max-width: 1160px;
-  margin: 0 auto;
-}
-
-.wrapper-finded-platforms {
-  max-width: 1160px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 140px auto;
+  display: flex;
 }
 
 .title-finded {
@@ -317,12 +330,14 @@
   text-align: center;
   color: #000;
   font-family: "Effra";
+
+  margin-bottom: 80px;
 }
 
 .table-logo {
   display: grid;
   gap: 32px;
-  height: auto;
+  width: 100%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -339,11 +354,15 @@
 
 .all-platforms {
   background: #fafafa;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-all-platforms {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 140px auto 80px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-all-platforms {
@@ -352,15 +371,18 @@
   text-align: center;
   color: #000;
   font-family: "Effra";
+  margin: 0;
 }
 
 .wrapper-tweet {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   gap: 42px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 140px;
 }
 
 .logo-list-all-platforms {
@@ -400,11 +422,15 @@
 
 .subscriptions {
   background-color: #000;
+  width: 100%;
 }
 
 .wrapper-subscriptions {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 140px auto 140px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
 }
 
 .title-subscriptions {
@@ -413,6 +439,8 @@
   text-align: center;
   color: #fff;
   font-family: "Effra";
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .slider-selecter {
@@ -468,10 +496,23 @@
   padding: 32px 32px 24px 32px;
   box-sizing: border-box;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-list {
+.card-sub-green {
+  height: 640px;
+  max-width: 360px;
+  background-color: #a8ff35;
+  padding: 32px 32px 24px 32px;
+  box-sizing: border-box;
+  border-radius: 16px;
   display: flex;
+  flex-direction: column;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 
@@ -495,7 +536,9 @@
   line-height: 100%;
   color: #000;
   font-family: "Effra";
-  margin: 0 0 32px 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .line-card {
   width: 296px;
@@ -523,6 +566,7 @@
   display: flex;
   margin: 0 0 32px 0;
   align-items: flex-end;
+  width: 100%;
 }
 
 .vertiacal-box-card {
@@ -557,6 +601,235 @@
   justify-content: center;
 }
 
-.wrapper-vertical-box-card {
+.btn-free-tral-green-card {
   display: flex;
+  background: #000;
+  border-radius: 29px;
+  width: 100%;
+  height: 58px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Effra";
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-button-in-card {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.section-join-now {
+  background: #a8ff35;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-join-now {
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 140px auto;
+}
+
+.title-join-now {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 112%;
+  text-align: center;
+  color: #000;
+  font-family: "Effra-Heavy";
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.set-color-title-join-now {
+  color: #87d322;
+}
+
+.btn-join-now {
+  border-radius: 40px;
+  padding: 16px 32px;
+  width: 180px;
+  height: 57px;
+  background: #000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  font-family: "Effra";
+}
+
+.btn-join-now {
+  cursor: pointer;
+}
+
+.listi-footer-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.link-footer-menu {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Effra";
+  text-decoration: none;
+}
+
+.wrapper-footer {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.wrapper-footer-logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.title-footer {
+  font-family: "Effra";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+
+  color: #000;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .container-nav-menu {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .card-sub,
+  .card-sub-green {
+    max-width: 360px;
+  }
+  .table-logo {
+    width: 100%;
+  }
+  .logo-list-all-platforms {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1124px) {
+  .wrapper-cards {
+    justify-content: center;
+  }
+  .pinterest-card {
+    top: 98px;
+    left: -300px;
+    max-width: 90%;
+    height: auto;
+  }
+  .facebook-card {
+    left: 352px;
+    max-width: 90%;
+    height: auto;
+  }
+  .png-card {
+    left: 83px;
+    max-width: 90%;
+    height: auto;
+  }
+  .twitter-card {
+    left: -75px;
+    max-width: 90%;
+    height: auto;
+  }
+  .nav-menu,
+  .box-size-register {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: #87d322;
+  }
+}
+
+@media (max-width: 906px) {
+  .wrapper-cards {
+    justify-content: center;
+  }
+
+  .title-main-text {
+    font-size: 64px;
+  }
+  .description-main-text {
+    font-size: 16px;
+  }
+  .container-nav-menu {
+    margin-bottom: 79px;
+  }
+  .wrapper-main {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 828px) {
+  .container-nav-menu {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .wrapper-cards {
+    justify-content: center;
+  }
+
+  .wrapper-cards {
+    grid-template-columns: auto;
+  }
+  .twitter-card,
+  .pinterest-card,
+  .png-card,
+  .facebook-card {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 636px) {
+  .title-main-text {
+    font-size: 58px;
+  }
+  .description-main-text {
+    font-size: 14px;
+  }
+  .container-nav-menu {
+    margin-bottom: 63px;
+  }
+  .wrapper-main {
+    margin-bottom: 60px;
+  }
 }
