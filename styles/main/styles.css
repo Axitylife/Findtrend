@@ -453,9 +453,12 @@
 
 .save-position {
   position: absolute;
-  right: 309px;
+  top: -40px;
+  left: 0;
 }
-
+.save-position-two {
+  display: none;
+}
 .card-sub {
   height: 640px;
   width: 100%;
@@ -590,12 +593,7 @@
 }
 
 .title-join-now {
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 112%;
-  text-align: center;
   color: #000;
-  font-family: "Effra-Heavy";
   margin: 0;
   margin-bottom: 40px;
 }
@@ -616,10 +614,8 @@
   text-align: center;
   color: #fff;
   font-family: "Effra";
-}
-
-.btn-join-now {
   cursor: pointer;
+  text-wrap: nowrap;
 }
 
 .listi-footer-menu {
@@ -627,6 +623,9 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  max-height: 18px;
+  padding: 0;
+  margin: 0;
 }
 
 .link-footer-menu {
@@ -647,7 +646,6 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  height: 100px;
 }
 
 .wrapper-footer-logo {
@@ -696,6 +694,10 @@
 
 .box-pos {
   width: 360px;
+}
+
+.sub-position {
+  position: relative;
 }
 @media (max-width: 1280px) {
   .container-nav-menu {
@@ -786,6 +788,10 @@
   }
   .card-list {
     gap: 20px;
+  }
+  .wrapper-footer {
+    padding: 18px;
+    box-sizing: border-box;
   }
 }
 
@@ -897,6 +903,38 @@
   .card-sub-green {
     max-width: 100%;
   }
+  .wrapper-join-now,
+  .wrapper-subscriptions {
+    margin: 100px auto;
+  }
+  .wrapper-footer {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .listi-footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .wrapper-footer {
+    flex-direction: column;
+    margin: 80px auto;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 80px;
+  }
+  .list-footer-menu-item:last-child {
+    padding-bottom: 80px;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 636px) {
@@ -992,14 +1030,59 @@
   .table-logo {
     gap: 15px;
   }
+
   .title-all-platforms {
     margin-bottom: 35px;
   }
+
   .wrapper-all-platforms {
     margin: 90px auto 35px auto;
   }
+
   .wrapper-tweet {
     margin-bottom: 90px;
+  }
+
+  .save-position {
+    display: none;
+  }
+
+  .save-position-two {
+    display: block;
+    position: absolute;
+    left: -120px;
+    top: 20px;
+  }
+  .wrapper-join-now,
+  .wrapper-subscriptions {
+    margin: 80px auto;
+  }
+  .size-box-slider {
+    margin-bottom: 80px;
+  }
+
+  .selecter-slider-varible1 {
+    font-size: 18px;
+  }
+
+  .selecter-slider-varible2 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .slider-selecter {
+    height: 44px;
+  }
+
+  .cicrle {
+    width: 28px;
+    height: 28px;
+  }
+  .btn-join-now {
+    padding: 12px 24px;
+    max-width: 106px;
+    height: 44px;
+    font-size: 14px;
   }
 }
 
