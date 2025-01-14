@@ -646,6 +646,7 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  min-height: 100px;
 }
 
 .wrapper-footer-logo {
