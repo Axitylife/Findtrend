@@ -116,7 +116,7 @@
   color: #fff;
   color: white;
   margin-right: 2px;
-  height: 28px;
+  line-height: 28px;
   font-family: "Roboto";
 }
 
@@ -893,8 +893,8 @@
 
   .table-logo {
     gap: 18px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .image-size-logo-grid {
     max-width: 150px;
